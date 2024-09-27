@@ -1,0 +1,60 @@
+HTML
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" type="text/css" href="customize.css" media="screen"></link>
+		<script src="arithmetic.js"></script>
+	</head>
+	
+	<body>
+		<h1>Calculator</h1>
+		
+		<p id="firstpart">
+			<input type = "text" id="txtResult"></input><br>
+			
+			<button type="button" id="btnclear">C</button>
+			<button type="button" id="btnpi">π</button>
+			<button type="button" id="btnsqrt">sqrt</button>
+			<button type="button" id="btnsq">sq</button>
+			<button type="button" id="btnpercentage">%</button>
+			<button type="button" id="btnle"><=</button><br>
+			
+			<button type="button" id="btnlog">log</button>
+			<button type="button" id="btnsin">sin</button>
+			<button type="button" id="btnexp">exp</button>
+			<button type="button" id="btnexpond">^</button>
+			<button type="button" id="btnpn">+/-</button>
+			<button type="button" id="btndiv">÷</button><br>
+			
+			<button type="button" id="btnln">ln</button>
+			<button type="button" id="btncos">cos</button>
+			<button type="button" id="btnnum7">7</button>
+			<button type="button" id="btnnum8">8</button>
+			<button type="button" id="btnnum9">9</button>
+			<button type="button" id="btnmult">×</button><br>
+			
+			<button type="button" id="btnn">n!</button>
+			<button type="button" id="btntan">tan</button>
+			<button type="button" id="btnnum4">4</button>
+			<button type="button" id="btnnum5">5</button>
+			<button type="button" id="btnnum6">6</button>
+			<button type="button" id="btnsub">-</button><br>
+			
+			<button type="button" id="btnradians">radians</button>
+			<button type="button" id="btnnum1">1</button>
+			<button type="button" id="btnnum2">2</button>
+			<button type="button" id="btnnum3">3</button>
+			<button type="button" id="btnadd">+</button><br>
+			
+			<button type="button" id="btndegrees">degrees</button>
+			<button type="button" id="btnnum0">0</button>
+			<button type="button" id="btndecimal">.</button>
+			<button type="button" id="btnequal">=</button>
+			
+		</p>
+	</body>
+	
+</html>
+
