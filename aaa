@@ -58,3 +58,22 @@ HTML
 	
 </html>
 
+
+window.addEventListener("load", addListener);
+var result;
+function addListener()
+{
+	document.getElementById("txtResult").disabled = true;
+	document.getElementById("btnadd").addEventListener("click",Addition);
+	document.getElementById("btnsub").addEventListener("click",Subtraction);
+	document.getElementById("btnmult").addEventListener("click",Multiplication);
+	document.getElementById("btndiv").addEventListener("click",Division);
+	document.getElementById("btnclear").addEventListener("click",Clear);
+	document.getElementById("btnpi").addEventListener("click",Pi);
+	document.getElementById("btnsqrt").addEventListener("click",SquareRoot);
+	document.getElementById("btnpercentage").addEventListener("click",Percentage);
+	document.getElementById("btnle").addEventListener("click",LessEqual);
+	document.getElementById("btnlog").addEventListener("click",Log);
+	document.getElementById("btnsin").addEventListener("click",Sin);
+	document.getElementById("btnsin").addEventListener("click",Exp);
+}
