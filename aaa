@@ -94,6 +94,7 @@ function addListener()
 	document.getElementById("btnnum2").addEventListener("click",Two);
 	document.getElementById("btnnum3").addEventListener("click", Three);
 	document.getElementById("btnnum0").addEventListener("click", Zero);
+	document.getElementById("btnexponent").addEventListener("click", Exponent)
 	document.getElementById("btndecimal").addEventListener("click", Decimal);
 }
 
