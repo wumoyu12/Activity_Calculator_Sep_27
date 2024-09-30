@@ -1,4 +1,3 @@
-HTML
 <!DOCTYPE html>
 <html>
 
@@ -24,7 +23,7 @@ HTML
 			<button type="button" id="btnlog">log</button>
 			<button type="button" id="btnsin">sin</button>
 			<button type="button" id="btnexp">exp</button>
-			<button type="button" id="btnexpond">^</button>
+			<button type="button" id="btnexponent">^</button>
 			<button type="button" id="btnpn">+/-</button>
 			<button type="button" id="btndiv">÷</button><br>
 			
