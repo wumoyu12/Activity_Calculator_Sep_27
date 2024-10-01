@@ -239,3 +239,148 @@ function Decimal()
 		num = num + "."
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener("load", addListener);
+var num, numone, numtwo;
+var num1 = "",num2 = "";
+
+function addListener()
+{
+	document.getElementById("txtResult").disabled = true;
+	document.getElementById("btnadd").addEventListener("click",Addition);
+	document.getElementById("btnsub").addEventListener("click",Subtraction);
+	document.getElementById("btnmult").addEventListener("click",Multiplication);
+	document.getElementById("btndiv").addEventListener("click",Division);
+	document.getElementById("btnclear").addEventListener("click",Clear);
+	document.getElementById("btnpi").addEventListener("click",Pi);
+	document.getElementById("btnsqrt").addEventListener("click",SquareRoot);
+	document.getElementById("btnpercentage").addEventListener("click",Percentage);
+	document.getElementById("btnle").addEventListener("click",LessEqual);
+	document.getElementById("btnlog").addEventListener("click",Log);
+	document.getElementById("btnsin").addEventListener("click",Sin);
+	document.getElementById("btnexp").addEventListener("click",Exp);
+	document.getElementById("btnln").addEventListener("click",ln);
+	document.getElementById("btncos").addEventListener("click",Cos);
+	document.getElementById("btnn").addEventListener("click",Nn);
+	document.getElementById("btntan").addEventListener("click",Tan);
+	document.getElementById("btnradians").addEventListener("click",Radians);
+	document.getElementById("btndegrees").addEventListener("click",Degrees);
+	document.getElementById("btnequal").addEventListener("click",Equal);
+	document.getElementById("btnpn").addEventListener("click",Negative);
+	document.getElementById("btnnum7").addEventListener("click",Seven);
+	document.getElementById("btnnum8").addEventListener("click",Eight);
+	document.getElementById("btnnum9").addEventListener("click", Nine);
+	document.getElementById("btnnum4").addEventListener("click",Four);
+	document.getElementById("btnnum5").addEventListener("click",Five);
+	document.getElementById("btnnum6").addEventListener("click", Six);
+	document.getElementById("btnnum1").addEventListener("click",One);
+	document.getElementById("btnnum2").addEventListener("click",Two);
+	document.getElementById("btnnum3").addEventListener("click", Three);
+	document.getElementById("btnnum0").addEventListener("click", Zero);
+	document.getElementById("btnexponent").addEventListener("click", Exponent)
+	document.getElementById("btndecimal").addEventListener("click", Decimal);
+}
+
+function Zero()
+{
+	num = "0"
+	GetNums()
+}
+
+function One()
+{
+	num = "1"
+	GetNums()
+}
+
+function Two()
+{
+	num = "2"
+	GetNums()
+}
+
+function Three()
+{
+	num = "3"
+	GetNums()
+}
+
+function Four()
+{
+	num = "4"
+	GetNums()
+}
+
+function Five()
+{
+	num = "5"
+	GetNums()
+}
+
+function Six()
+{
+	num = "6"
+	GetNums()
+}
+
+function Seven()
+{
+	num = "7"
+	GetNums()
+}
+
+function Eight()
+{
+	num = "8"
+	GetNums()
+}
+
+function Nine()
+{
+	num = "9"
+	GetNums()
+}
+
+function Addition()
+{
+	if (num1 != "existed")
+		{
+			alert("You have to enter a number first")
+		}
+	else
+		{
+			numone = "existed"
+			operation = "add"
+		}
+}
+
+function GetNums()
+{
+	if (numone == "existed")
+		{
+			num2 = num2 + num
+		}
+	else
+		{
+			num1 = num1 + num
+		}
+}
