@@ -360,27 +360,7 @@ function Nine()
 	GetNums()
 }
 
-function Addition()
-{
-	if (num1 != "existed")
-		{
-			alert("You have to enter a number first")
-		}
-	else
-		{
-			numone = "existed"
-			operation = "add"
-		}
-}
-
 function GetNums()
 {
-	if (numone == "existed")
-		{
-			num2 = num2 + num
-		}
-	else
-		{
-			num1 = num1 + num
-		}
+	if 
 }
