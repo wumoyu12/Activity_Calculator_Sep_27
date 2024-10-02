@@ -58,197 +58,6 @@
 </html>
 
 
-window.addEventListener("load", addListener);
-var num = "";
-function addListener()
-{
-	document.getElementById("txtResult").disabled = true;
-	document.getElementById("btnadd").addEventListener("click",Addition);
-	document.getElementById("btnsub").addEventListener("click",Subtraction);
-	document.getElementById("btnmult").addEventListener("click",Multiplication);
-	document.getElementById("btndiv").addEventListener("click",Division);
-	document.getElementById("btnclear").addEventListener("click",Clear);
-	document.getElementById("btnpi").addEventListener("click",Pi);
-	document.getElementById("btnsqrt").addEventListener("click",SquareRoot);
-	document.getElementById("btnpercentage").addEventListener("click",Percentage);
-	document.getElementById("btnle").addEventListener("click",LessEqual);
-	document.getElementById("btnlog").addEventListener("click",Log);
-	document.getElementById("btnsin").addEventListener("click",Sin);
-	document.getElementById("btnexp").addEventListener("click",Exp);
-	document.getElementById("btnln").addEventListener("click",ln);
-	document.getElementById("btncos").addEventListener("click",Cos);
-	document.getElementById("btnn").addEventListener("click",Nn);
-	document.getElementById("btntan").addEventListener("click",Tan);
-	document.getElementById("btnradians").addEventListener("click",Radians);
-	document.getElementById("btndegrees").addEventListener("click",Degrees);
-	document.getElementById("btnequal").addEventListener("click",Equal);
-	document.getElementById("btnpn").addEventListener("click",Negative);
-	document.getElementById("btnnum7").addEventListener("click",Seven);
-	document.getElementById("btnnum8").addEventListener("click",Eight);
-	document.getElementById("btnnum9").addEventListener("click", Nine);
-	document.getElementById("btnnum4").addEventListener("click",Four);
-	document.getElementById("btnnum5").addEventListener("click",Five);
-	document.getElementById("btnnum6").addEventListener("click", Six);
-	document.getElementById("btnnum1").addEventListener("click",One);
-	document.getElementById("btnnum2").addEventListener("click",Two);
-	document.getElementById("btnnum3").addEventListener("click", Three);
-	document.getElementById("btnnum0").addEventListener("click", Zero);
-	document.getElementById("btnexponent").addEventListener("click", Exponent)
-	document.getElementById("btndecimal").addEventListener("click", Decimal);
-}
-
-function Zero()
-{
-	if (num == "")
-	{
-		num = "0"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "0"
-	}
-}
-
-function One()
-{
-	if (num == "")
-	{
-		num = "1"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "1"
-	}
-}
-
-function Two()
-{
-	if (num == "")
-	{
-		num = "2"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "2"
-	}
-}
-
-function Three()
-{
-	if (num == "")
-	{
-		num = "3"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "3"
-	}
-}
-
-function Four()
-{
-	if (num == "")
-	{
-		num = "4"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "4"
-	}
-}
-
-function Five()
-{
-	if (num == "")
-	{
-		num = "5"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "5"
-	}
-}
-
-function Six()
-{
-	if (num == "")
-	{
-		num = "6"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "6"
-	}
-}
-
-function Seven()
-{
-	if (num == "")
-	{
-		num = "7"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "7"
-	}
-}
-
-function Eight()
-{
-	if (num == "")
-	{
-		num = "8"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "8"
-	}
-}
-
-function Nine()
-{
-	if (num == "")
-	{
-		num = "9"
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "9"
-	}
-}
-
-function Decimal()
-{
-	if (num == "")
-	{
-		num = "0."
-		document.getElementById("txtResult").value = num
-	}
-	else
-	{
-		num = num + "."
-	}
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -260,8 +69,7 @@ function Decimal()
 
 
 window.addEventListener("load", addListener);
-var num, numone, numtwo;
-var num1 = "",num2 = "";
+var num = "", num1 = "",num2 = "", decimal = "", result = "";
 
 function addListener()
 {
@@ -360,7 +168,51 @@ function Nine()
 	GetNums()
 }
 
+function Decimal()
+{
+	if (decimal == "")
+	{
+		num = "."
+		GetNums()
+		decimal = "existed"
+	}
+	else
+	{
+		alert("You already entered the decimal.")
+	}
+}
+
 function GetNums()
 {
-	if 
+	result = result + num;
+	document.getElementById("txtResult").value = result;
+}
+
+function Addition()
+{
+	CheckNum();
+	Operation = "A"
+}
+
+function CheckNum()
+{
+	if (document.getElementById("txtResult").value = "");
+	{
+		alert("The number will be 0, because you didn't enter the number")
+		document.getElementById("txtResult").value = "0"
+		Operation()
+	}
+	else
+	{
+		Operation()
+	}
+
+function Operation()
+{
+	if (Operation == "A")
+	{
+		
+	}
+}
+
 }
