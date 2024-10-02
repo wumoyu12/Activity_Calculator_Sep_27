@@ -1,0 +1,128 @@
+JAVASCRIPT
+
+window.addEventListener("load", addListener);
+var num = "", decimal = "", result = "";
+
+function addListener()
+{
+	document.getElementById("txtResult").disabled = true;
+	
+	document.getElementById("btnclear").addEventListener("click",Clear);
+	
+	document.getElementById("btnnum0").addEventListener("click", Zero);
+	document.getElementById("btnnum1").addEventListener("click",One);
+	document.getElementById("btnnum2").addEventListener("click",Two);
+	document.getElementById("btnnum3").addEventListener("click", Three);
+	document.getElementById("btnnum4").addEventListener("click",Four);
+	document.getElementById("btnnum5").addEventListener("click",Five);
+	document.getElementById("btnnum6").addEventListener("click", Six);
+	document.getElementById("btnnum7").addEventListener("click",Seven);
+	document.getElementById("btnnum8").addEventListener("click",Eight);
+	document.getElementById("btnnum9").addEventListener("click", Nine);
+	document.getElementById("btndecimal").addEventListener("click", Decimal);
+
+	document.getElementById("btnadd").addEventListener("click",Addition);
+}
+
+function Zero()
+{
+	num = "0";
+	GetNums();
+}
+
+function One()
+{
+	num = "1";
+	GetNums();
+}
+
+function Two()
+{
+	num = "2";
+	GetNums();
+}
+
+function Three()
+{
+	num = "3";
+	GetNums();
+}
+
+function Four()
+{
+	num = "4";
+	GetNums();
+}
+
+function Five()
+{
+	num = "5";
+	GetNums();
+}
+
+function Six()
+{
+	num = "6";
+	GetNums();
+}
+
+function Seven()
+{
+	num = "7";
+	GetNums();
+}
+
+function Eight()
+{
+	num = "8";
+	GetNums();
+}
+
+function Nine()
+{
+	num = "9";
+	GetNums();
+}
+
+function Decimal()
+{
+	if (decimal == "existed")
+	{
+		alert("You already entered the decimal.");
+	}
+	else
+	{
+		num = ".";
+		GetNums();
+		decimal = "existed";
+	}
+}
+
+function GetNums()
+{
+	result = result + num;
+	document.getElementById("txtResult").value = result;
+}
+
+
+function Clear()
+{
+	num = "";
+	decimal = "";
+	result = "";
+	document.getElementById("txtResult").value = result;
+}
+
+function Addition()
+{
+	CheckNum();
+}
+
+function CheckNum()
+{
+	if (document.getElementById("txtResult").value == "")
+		{
+			alert("You didn't enter the number berfore you choose the operation, so the number will be 0");
+			document.getElementById("txtResult").value = parseFloat(0);
+		}
+}
